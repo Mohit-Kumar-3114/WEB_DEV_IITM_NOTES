@@ -1,1 +1,133 @@
  
+Question- What are browser? 
+Answer- A web browser is a type of software that allows you to find and view websites on the Internet. 
+There are many different web browsers, but some of the most common ones include Google Chrome, Safari, 
+and Mozilla Firefox.
+
+
+
+
+Question- How do browser render websites?
+Answer- The browser starts processing the HTML page line by line from the beginning till the end of 
+the page. It starts rendering the HTML tags placed inside the <body> tag to show the page content. 
+
+
+
+
+Question- What purpose do html, cs and js serve?
+Answer- Three of the most important “front end” languages are HTML, CSS, and JavaScript. These all
+have specific uses, and all three are used to design websites. They help define form, function, and style.
+
+
+
+
+Question- What is internet?
+Answer- Internet is a vast network that connects computer all over the world.
+
+
+
+
+Question- What are websites and webpages?
+Answer- A website is a collection of many web pages, and web pages are documents that are displayed in a web 
+browser and are usually written using HTML (structure), CSS (style), and JavaScript (behavior).
+
+
+
+
+Question- What is domain name?
+Answer- A domain name is a human-readable address used to access a website on the internet, instead of typing the 
+numerical IP address. A domain name must be unique. For example Facebook.com.
+
+
+
+
+Question- What is url?
+Answer- A URL is like a web address. It tells your computer how to find something on the internet.
+
+
+
+
+Question- What is difference between url and domain name?
+Answer- A uniform resource locator (URL), sometimes called a web address, contains the domain name of a site 
+as well as other information, including the protocol and the path. For example, in the URL 
+‘https://cloudflare.com/learning/’, ‘cloudflare.com’ is the domain name, while ‘https’ is the protocol and 
+‘/learning/’ is the path or route to a specific page on the website.
+   
+
+
+
+Question- What are the parts of domain name?
+Answer- A domain name generally has a three-part structure, and each part of the domain is separated by a dot:
+1. Subdomain or third-level domain, such as www
+2. Second-Level Domain (SLD), which is the name of the website
+3. Top-Level Domain (TLD), such as com
+
+
+
+
+Question- What is route?
+Answer- A route refers to a specific endpoint or URL (Uniform Resource Locator) within a web application or server. 
+
+
+
+
+Question- What is web crawler?
+Answer- Web Crawler is a bot that downloads the content from the internet and indexes it. The main purpose of 
+this bot is to learn about the different web pages on the internet. This kind of bots is mostly operated by 
+search engines.
+
+
+
+
+Question- What is differnce between frontend and backend?
+Answer- Frontend is what users see and interact with, while backend is the behind-the-scenes part that manages 
+data, logic and server operations.
+
+
+
+
+Question- What is html?
+Answer- HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages.
+HTML describes the structure of a Web page. HTML elements tell the browser how to display the content.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+</body>
+</html>
+-> The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
+-> The <html> element is the root element of an HTML page and language is english.
+-> The <head> element contains meta information about the HTML page.
+-> The <meta charset="UTF-8"> specifies that a web page uses UTF-8 encoding to correctly display characters from all 
+   languages. UTF-8 is Unicode Transformation Format. It can translate unicode character to a matching unique 
+   binary string and vice versa.
+-> The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the 
+   page's tab).
+-> The <body> element defines the document's body, and is a container for all the visible contents, such as 
+   headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+
+
+
+Question- What are html tags and attributes?
+Answer- HTML tags are used to hold the HTML element. HTML elements are defined by a starting tag, may contain some 
+content and a closing tag.For example, <h1>Heading 1</h1> is a HTML element but just <h1> is a starting tag and 
+</h1> is a closing tag. HTML attributes are used to describe the characteristic of an HTML element in detail. 
+
+
+
+Question- What are meta tags?
+Answer- Meta tags are HTML tags used to provide additional information about a page to search engines and other 
+clients. <meta> tags always go inside the <head> element, and are typically used to specify character set, page 
+description, keywords, author of the document, and viewport settings.
+
+
+
+
+Question- What is href?
+Answer- The href attribute (hypertext reference attribute) defines the link destination or target. This is often a 
+webpage URL.

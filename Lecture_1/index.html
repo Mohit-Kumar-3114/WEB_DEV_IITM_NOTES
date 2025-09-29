@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-BASIC</title>
+</head>
+<body>
+    
+
+    
+    
+<!--HEADING TAGS-->
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+
+
+
+
+<!--PARAGRAPH TAGS-->
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam </p>
+
+
+
+
+<!--BOLD TAGS-->
+<b>My age is 20</b>
+<strong> My age is 20</strong> <!--mostly used-->
+<br>
+
+
+
+<!--ITALIC TAGS-->
+<i>My name is John</i>
+<em>My name is John</em> <!--mostly used-->
+
+
+
+
+<!--LINE BREAK TAGS-->
+<br> <!--no need of closing br (</br>) as it is auto closing-->
+
+
+
+
+<!--DIV AND SPAN TAGS-->
+<span>hi i am fine</span>
+<span>hi i am fine</span> <!--in-line tags so they take as much space as they need-->
+<div>hello how are you?</div>
+<div>hello how are you?</div> <!--block level tags so they push content to next line-->
+
+
+
+
+<!--HTML ENTITIES-->
+<div> this is a &lt; p &gt; tag</div> <!--this is is <p> tag--> 
+<div>a<sup>2</sup> &plus; b<sup>2</sup> &equals; c<sup>2</sup></div> <!--a^2+b^2=c^2-->
+<div>a<sub>2</sub> &plus; b<sub>2</sub> &equals; c<sub>2</sub></div> <!--a2+b2=c2-->
+
+
+
+
+<!--LISTS IN HTML-->
+<ol type="a">
+<li>this is item 1</li>
+<li>this is item 2</li>
+<li>this is item 3</li>
+</ol>
+
+<ul type="square">
+<li>this is item 1</li>
+<li>this is item 2</li>
+<li>this is item 3</li>
+</ul>
+
+
+
+
+<!--LINKS IN HTML-->
+<a href="https://www.w3schools.com">W3 SCHOOLS</a> <!--take us to w3 schools home page-->
+<a href="#">same</a> <!--take us to same page-->
+<a href="tel:720629096"> call him</a> 
+<a href="mailto: vd918@gmail.com">mail him</a>
+<br><br>
+
+
+
+
+<!--HTML INPUTS-->
+<input type="text" placeholder="ENTER YOUR NAME" value="abcde">
+<input type="password" placeholder="ENTER YOUR PASSWORD" value="12345">
+<input type="number" placeholder="ENTER YOUR AGE" value="20">
+<input type="email" placeholder="ENTER YOUR EMAIL" value="your@gmail.com">
+<input type="date" placeholder="ENTER YOUR DOB" value="2024-06-20">
+<br><br>
+<input type="radio" name="radio"> <input type="radio" name="radio"> <!--for toggle always give name attribute-->
+
+
+
+
+<!--DROPDOWN LIST IN HTML-->
+<select>
+    <option >option 1</option>
+    <option >option 2</option>
+    <option selected >option 3</option> <!--by default is option 1 but we have selected option 3-->
+    <option >option 4</option> 
+    <option >option 5</option>
+    <option >option 6</option>
+</select>
+
+
+
+
+<!--HTML FORMS-->
+<form action="#" method="get"> <!--action tells where form get submit and method tells type of request-->
+<fieldset> <!--for providing structure-->
+    <legend> <!--for providing heaading-->
+        USER DETAILS
+    </legend>
+    <button type="submit">submit</button> <!--type can be submit reset etc.-->
+</fieldset>
+</form>
+
+
+
+
+<!--HTML MEDIA-->
+<img src="data:image/SFRQYFRgZGBIRGBoYG" width="100px" height="100px" 
+alt="this is image of chatgpt">  <!--if by any reason our image is not displayable then we use alt to specify our 
+                                 image description-->
+
+
+<audio controls></audio> 
+<audio src="enter any url" controls muted loop></audio>
+
+
+<video controls muted loop></video> 
+<video src="enter any url" controls autoplay></video>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fFYeGivYB_o?si=Yl2fdCSfUplDjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe> 
+
+
+
+<!-- TABLE IN HTML -->
+<table border="1" cellspacing="2" cellpadding="10">
+    <tr>
+      <th>Person</th>
+      <th>Most interest in</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Chris</td>
+      <td>HTML tables</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Dennis</td>
+      <td rowspan="2">Web accessibility</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>Sarah</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Karen</td>
+      <td>Web performance</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td colspan="2">Average age</td>
+      <td>33</td>
+    </tr>
+  </table>
+
+
+
+
+</body>
+</html>

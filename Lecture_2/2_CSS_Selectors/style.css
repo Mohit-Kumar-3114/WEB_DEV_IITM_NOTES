@@ -1,0 +1,23 @@
+/* 1. Tagname Selector */
+p {
+  color: darkblue !important;/* Applies to all <p> */ 
+}
+
+/* 2. ID Selector */
+#unique {
+  color: crimson; /* Applies to element with id="unique" */
+  font-weight: bold;
+}
+
+/* 3. Class Selector */
+.highlight {
+  background-color: yellow; /* Applies to all elements with class="highlight" */
+  padding: 5px;
+}
+
+/* 4. Universal Selector */
+* {
+  font-family: Arial, sans-serif; /* Applies to all elements */
+}
+
+

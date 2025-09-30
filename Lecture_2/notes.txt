@@ -1,0 +1,53 @@
+Question- What is CSS?
+Answer- CSS (Cascading Style Sheets) is a language used to style and design web pages. It controls how 
+HTML elements look — their colors, fonts, layouts, sizes, backgrounds, borders, spacing, etc.   
+
+
+
+
+Question- What are the different types of CSS?
+Answer- There are three main types of CSS: Inline CSS, Internal CSS, and External CSS.
+1. Inline CSS: Applied directly to an HTML element using the style attribute.
+2. Internal CSS: Defined within a <style> tag in the <head> section of an HTML document.
+3. External CSS: Linked to an HTML document via a separate .css file using the <link> tag.
+
+Preference Order (from highest to lowest):
+1. Inline CSS: Highest priority, applies styles directly to an element. 
+2. Internal CSS: Medium priority, applies styles to the entire document but can be overridden by inline
+   styles.
+3. External CSS: Lowest priority, applies styles to multiple documents but can be overridden by both 
+   inline and internal styles.    
+
+
+
+
+Question- What are CSS Selectors?
+Answer- CSS selectors are patterns used to select and style HTML elements. Common types include:
+1. Element Selector: Selects elements by their tag name (e.g., div, p, h1).
+2. Class Selector: Selects elements with a specific class attribute (e.g., .box).
+3. ID Selector: Selects a single element with a specific id attribute (e.g., #header).
+4. Universal Selector: Selects all elements on the page (e.g., *).
+
+Preference Order (from highest to lowest):
+1. !important: Overrides all other styles, regardless of specificity.
+2. ID Selector (#id): Highest priority, applies styles to a single unique element.
+3. Class Selector (.class): Medium priority, applies styles to all elements with the specified class.
+4. Element Selector (element): Lower priority, applies styles to all elements of the specified type.
+5. Universal Selector (*): Lowest priority, applies styles to all elements on the page.
+
+
+
+
+Question- What is the CSS Box Model?
+Answer- The CSS Box Model is a fundamental concept that describes how elements on a web page are 
+structured and how their dimensions are calculated. Each element is represented as a rectangular box, 
+which consists of four main components:
+1. Content: The innermost part of the box where text and images appear. The size of the content area is
+   defined by the width and height properties.
+2. Padding: The space between the content and the border.
+3. Border: The line that surrounds the padding and content.      
+4. Margin: The space outside the border.
+
+padding/margin: 10px; // all sides 10px
+padding/margin: 10px 20px; // top bottom 10px, left right 20px
+padding/margin: 20px 30px 40px 50px; // top 20px, right 30px, bottom 40px, left 50px

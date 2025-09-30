@@ -1,0 +1,11 @@
+.box {
+  width: 250px;              /* Content width */
+  height: 100px;             /* Content height */
+  background-color: lightblue;  /* Content area */
+
+  padding: 20px;             /* Space inside the box */
+  border: 5px solid darkblue;/* Border around content + padding */
+  margin: 30px;              /* Space outside the box */
+}
+
+

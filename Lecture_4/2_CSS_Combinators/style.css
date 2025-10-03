@@ -1,0 +1,53 @@
+
+/* Descendant Combinator */
+/* The descendant combinator is represented by a space between two selectors. It selects
+all elements that are descendants of a specified element, 
+regardless of their depth in the hierarchy.
+ */
+
+#d1 p{
+    background-color: red;
+    /* This will select all <p> elements that are descendants of the element with id "d1" */
+}
+
+
+
+
+/* Child Combinator */
+/* The child combinator is represented by the greater-than sign (>) between two selectors.
+It selects all elements that are direct children of a specified element.
+ */
+
+#d2 > p{
+    background-color: rgb(121, 121, 239);
+    /* This will select all <p> elements that are direct children of the element with id "d2" */
+}
+
+
+
+
+/* Adjacent Sibling Combinator */
+/* The adjacent sibling combinator is represented by the plus sign (+) between two selectors.
+It selects the element that comes immediately after another element, sharing the same parent.
+If there are multiple siblings, only the first one is selected.
+If there is no adjacent sibling, the selector will not match any elements.
+ */
+
+#p3 + div{
+    background-color: green;
+    /* This will select the <div> element that is immediately after the <p> element with id "p3" */
+}
+
+
+
+
+/* General Sibling Combinator */
+/* The general sibling combinator is represented by the tilde (~) between two selectors.
+It selects all elements that are next siblings of a specified element, sharing the same parent,
+regardless of their position in the sibling hierarchy.
+ */
+
+#p4 ~ div{
+    background-color: blue;
+    /* This will select all <div> elements that are next siblings of the <p> element with id "p4" */
+}

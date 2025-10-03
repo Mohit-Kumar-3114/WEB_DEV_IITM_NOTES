@@ -1,0 +1,248 @@
+
+.item{
+    height: 50px;
+    width: 100px;
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+#container1{
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; 
+    /* by default flex-direction is row */
+}
+
+#container2{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#container3{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#container4{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* justify-content works on main axis */
+#container5{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* by default justify-content is flex-start */
+}
+
+#container6{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#container7{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#container8{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container9{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#container10{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* align-items works on cross axis */
+#container11{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#container12{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#container13{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#container14{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    /* stretch */
+}
+
+#container15{
+    margin-top: 20px;
+    width: 100px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* by default flex-wrap is nowrap */
+    /* items move to the next line if there is not enough space in main axis */
+}
+
+#container16{
+    margin-top: 20px;
+    width: 100px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+}
+
+#container17{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;   
+}
+
+#item1_17{
+    align-self: flex-end;
+    /* center | flex-end | flex-start | baseline */
+    /* have more priority than align-items */
+}
+
+#container18{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; 
+}
+
+#item2_18{
+    flex-grow: 1;
+    /* by default grow is 0 */
+}
+
+#item3_18{
+    flex-grow: 2;
+}
+
+/* Total grow factor is 3
+    Space is distributed in the ratio of grow factors
+    Item 2 will take 1/3rd of the available space
+    Item 3 will take 2/3rd of the available space
+ */
+
+#container19{
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#item1_19{
+    flex-shrink: 2;
+    /* by default shrink is 1 */
+}
+
+#item4_19{
+    flex-shrink: 3;
+}
+
+/* Total shrink factor is 5
+    Space is reduced in the ratio of shrink factors
+    Item 1 will reduce 2/5th of the required space
+    Item 4 will reduce 3/5th of the required space
+ */

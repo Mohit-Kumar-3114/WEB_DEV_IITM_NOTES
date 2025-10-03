@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS COMBINATORS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+
+<h1>CSS COMBINATORS</h1>
+
+<h3>1. Descendant Combinator</h3>
+
+<div id="d1">
+    <p>This is paragraph 1</p>
+    <div>This is div 1</div>
+    <p>This is paragraph 2</p>
+    <div>This is div 2</div>
+    <ul>
+        <li>This is list item 1</li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+    </ul>
+    <div>
+        <p>This is a nested paragraph</p>
+        <div>This is a nested div</div>
+    </div>
+    <p>This is paragraph 3</p>
+    <div>This is div 3</div>
+</div>
+</div>
+
+<br><br>
+
+<h3>2. Child Combinator</h3>
+<div id="d2">
+    <p>This is paragraph 1</p>
+    <div>This is div 1</div>
+    <p>This is paragraph 2</p>
+    <div>This is div 2</div>
+  
+    <ul>
+        <li>This is list item 1</li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+    </ul>
+    <div>
+        <p>This is a nested paragraph</p>
+        <div>This is a nested div</div>
+    </div>
+    <p>This is paragraph 3</p>
+    <div>This is div 3</div>
+</div>
+</div>
+
+
+<br><br>
+
+<h3>3. Adjacent Sibling Combinator</h3>
+<div id="d3">
+    <p id="p3">This is paragraph 1</p>
+    <div>
+        <div>This is a nested div 1</div>
+        <p>This is a nested paragraph 1</p>
+    </div>
+    <div>This is div 2</div>
+    <p>This is paragraph 2</p>
+  
+    <ul>
+        <li>This is list item 1</li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+    </ul>
+    <div>
+        <p>This is a nested paragraph 2</p>
+        <div>This is a nested div 2</div>
+    </div>
+    <p>This is paragraph 3</p>
+    <div>This is div 3</div>
+</div>
+
+
+
+<br><br>
+
+<h3>4. General Sibling Combinator</h3>
+<div id="d4">
+    <div>This is a div 1</div>
+    <p id="p4">This is paragraph 1</p>
+    <div>
+        <div>This is a nested div 1</div>
+        <p>This is a nested paragraph 1</p>
+    </div>
+    <div>This is div 2</div>
+    <p>This is paragraph 2</p>
+  
+    <ul>
+        <li>This is list item 1</li>
+        <li>This is list item 2</li>
+        <li>This is list item 3</li>
+    </ul>
+    <div>
+        <p>This is a nested paragraph 2</p>
+        <div>This is a nested div 2</div>
+    </div>
+    <p>This is paragraph 3</p>
+    <div>This is div 3</div>
+</div>
+
+
+</html>
+

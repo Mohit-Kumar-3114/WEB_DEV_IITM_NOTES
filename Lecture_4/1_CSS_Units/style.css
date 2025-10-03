@@ -1,0 +1,101 @@
+
+#d1 {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+#c1 {
+    width: 70%;
+    /* This div will have width 70% (280px) with relative to parent's width ie ( #d1 ) */
+
+    height: 60%;
+    /* This div will have height 60% (240px) with relative to parent's height ie ( #d1 ) */
+
+    background-color: lightgreen;
+    border: 2px solid red;
+
+    margin: 10%;
+    /* This div will have margin 10% (40px) with relative to parent's width ie ( #d1 ) */
+
+    padding: 5%;
+    /* This div will have padding 5% (20px) with relative to parent's width ie ( #d1 ) */
+}
+
+
+
+
+#d2 {
+    width: 400px;
+    height: 400px;
+    background-color: lightcoral;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+#c2 {
+    /* 1em is equal to font-size of parent */
+
+    width: 7em;
+    /* This div will have width 7em (140px) with relative to parent's font-size ie ( #d2 ) */
+
+    height: 6em;
+    /* This div will have height 6em (120px) with relative to parent's font-size ie ( #d2 ) */
+
+    background-color: lightyellow;
+    border: 2px solid red;
+
+    margin: 1em;
+    /* This div will have margin 1em (20px) with relative to parent's font-size ie ( #d2 ) */
+
+    padding: 1em;
+    /* This div will have padding 1em (20px) with relative to parent's font-size ie ( #d2 ) */
+}
+
+
+
+
+#d3 {
+    width: 400px;
+    height: 400px;
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+
+
+#c3 {
+    /* 1rem is equal to font-size of root element ie (html), by default 1rem = 16px */
+
+    width: 10rem;
+    /* This div will have width 10rem (160px) with relative to root's font-size ie (html) */
+
+    height: 8rem;
+    /* This div will have height 8rem (128px) with relative to root's font-size ie (html) */
+
+    background-color: lightpink;
+    border: 2px solid red;
+
+    margin: 1rem;
+    /* This div will have margin 1rem (16px) with relative to root's font-size ie (html) */
+
+    padding: 1rem;
+    /* This div will have padding 1rem (16px) with relative to root's font-size ie (html) */
+}
+
+
+
+
+#d4 {
+    width: 40vw;
+    /* This div will have width 40vw (40% of viewport width) */
+
+    height: 40vh;
+    /* This div will have height 40vh (40% of viewport height) */
+
+    background-color: lightcyan;
+    border: 2px solid black;
+
+    padding: 2vh;
+    /* This div will have padding 2vh (2% of viewport height) */
+}

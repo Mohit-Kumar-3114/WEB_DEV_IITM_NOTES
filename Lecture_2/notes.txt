@@ -1,3 +1,4 @@
+
 Question- What is CSS?
 Answer- CSS (Cascading Style Sheets) is a language used to style and design web pages. It controls how 
 HTML elements look — their colors, fonts, layouts, sizes, backgrounds, borders, spacing, etc.   
@@ -15,8 +16,11 @@ Preference Order (from highest to lowest):
 1. Inline CSS: Highest priority, applies styles directly to an element. 
 2. Internal CSS: Medium priority, applies styles to the entire document but can be overridden by inline
    styles.
-3. External CSS: Lowest priority, applies styles to multiple documents but can be overridden by both 
-   inline and internal styles.    
+3. External CSS: Medium priority, applies styles to multiple documents but can be overridden by inline 
+   styles. 
+
+   Internal vs External CSS- The one that comes later in the code will take precedence 
+   if both are present.   
 
 
 
@@ -34,6 +38,8 @@ Preference Order (from highest to lowest):
 3. Class Selector (.class): Medium priority, applies styles to all elements with the specified class.
 4. Element Selector (element): Lower priority, applies styles to all elements of the specified type.
 5. Universal Selector (*): Lowest priority, applies styles to all elements on the page.
+
+<!-- !important > inline > id > classname > tagname > order(bad wala jitega internal vs external m) -->
 
 
 

@@ -1,0 +1,106 @@
+
+.item{
+    height: 50px;
+    width: 100px;
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+#container1{
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; 
+    /* by default flex-direction is row */
+}
+
+#container2{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#container3{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#container4{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* justify-content works on main axis */
+#container5{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* by default justify-content is flex-start */
+}
+
+#container6{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#container7{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#container8{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container9{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#container10{
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

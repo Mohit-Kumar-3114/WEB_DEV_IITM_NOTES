@@ -88,8 +88,8 @@ a {
     display: inline;
     /* display: inline; means the element will not start on a new line and only 
     take up as much width as necessary */
-    /* Width, height, padding, margin properties will not apply */
-
+    /* Width, height properties will not apply */
+    /* Margin and padding properties from top, bottom will not apply */
 }
 
 

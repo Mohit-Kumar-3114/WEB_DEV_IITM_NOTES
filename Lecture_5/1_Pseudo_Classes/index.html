@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes and Pseudo Elements</title>
+    <style>
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
+            text-decoration: underline;
+        }
+
+        li:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        li:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        li:nth-child(3n) {
+            font-weight: bold;
+        }
+
+        li:first-child {
+            font-size: 1.5em;
+        }
+
+        li:last-child {
+            font-size: 1.5em;
+        } 
+
+        input:focus {
+            border: 2px solid red;
+            outline: none;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+            font-weight: bold;
+        }
+
+        p::first-line {
+           background-color: yellow;
+            letter-spacing: 2px;
+        }
+
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+            color: green;
+        }
+
+        p::after {
+            content: " [End of paragraph]";
+            font-style: italic;
+            color: gray;
+        }
+
+        p::selection {
+            background-color: pink;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pseudo Classes</h1>
+<!-- Pseudo classes are used to define the special state of an element. -->
+
+<a href="https://www.bing.com" target="_blank">
+    This is a link to bing 
+</a>
+
+<br><br>
+
+<ul>
+    <li>This is item 1</li>
+    <li>This is item 2</li>
+    <li>This is item 3</li>
+    <li>This is item 4</li>
+    <li>This is item 5</li>
+    <li>This is item 6</li>
+    <li>This is item 7</li>
+    <li>This is item 8</li>
+</ul>
+
+<ol>
+    <li>This is item 1</li>
+    <li>This is item 2</li>
+    <li>This is item 3</li>
+    <li>This is item 4</li>
+    <li>This is item 5</li>
+    <li>This is item 6</li>
+    <li>This is item 7</li>
+    <li>This is item 8</li>
+</ol>
+
+<br><br>
+
+<input type="text" placeholder="Enter your name">
+
+<br><br>
+
+
+<h1>Pseudo Elements</h1>
+<!-- Pseudo elements are used to style specified parts of an element. -->
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga reiciendis rem sapiente doloribus beatae maiores molestiae iusto voluptatem nesciunt dolorum, commodi minus. Corporis nulla asperiores cumque, dolores ea dolor officiis!
+    Porro minus architecto totam tenetur assumenda aspernatur quaerat dolorem dicta aperiam eum odio nobis sunt, similique maxime dolorum enim, deserunt cumque animi inventore sed? Quae perspiciatis ullam asperiores corporis quaerat?
+    Repellendus blanditiis numquam nobis iste soluta dignissimos, explicabo nam dolore quod odit id molestias et error eos a rem officia, repudiandae corporis. Quae nobis expedita, aspernatur placeat enim vero eum.
+</p>
+    
+</body>
+</html>

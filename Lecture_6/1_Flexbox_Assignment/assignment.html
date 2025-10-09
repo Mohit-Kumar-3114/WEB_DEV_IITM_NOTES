@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        #container_1{
+            background-color: rgba(45, 44, 44);
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: sans-serif;
+            /* text-align: center;
+            line-height: 10vh; */   
+        }
+
+        .items{
+            height: 25vh;
+            width: 25vh;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            gap: 4px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);;
+        }
+
+        #container_2{
+            display: flex;
+            margin: 10px;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1vw;
+        }
+
+        img{
+            border-radius: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="parent_container">
+        <div id="container_1">
+        FlexBox Card Layout
+        </div>
+        <div id="container_2">
+         <div class="items" id="item1">
+            <img src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg" height="100" width="130">
+            <b>Card title 1</b>
+            <span style="font-size: 12px;">Short description for card 1.</span>
+         </div>
+         <div class="items" id="item2">
+            <img src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg" height="100" width="130">
+            <b>Card title 2</b>
+            <span style="font-size: 12px;">Short description for card 2.</span>
+         </div>
+         <div class="items" id="item3">
+            <img src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg" height="100" width="130">
+            <b>Card title 3</b>
+            <span style="font-size: 12px;">Short description for card 3.</span>
+         </div>
+         <div class="items" id="item4">
+            <img src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg" height="100" width="130">
+            <b>Card title 4</b>
+            <span style="font-size: 12px;">Short description for card 4.</span>
+         </div>
+        </div>
+
+    </div>
+</body>
+</html>

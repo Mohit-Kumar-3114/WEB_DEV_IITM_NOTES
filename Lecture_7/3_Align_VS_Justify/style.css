@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.items{
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+}
+
+
+/* justify-content => Positions the whole grid horizontally inside the container.
+align-content => Positions the whole grid vertically inside the container.
+justify-items => Positions each item horizontally inside its grid cell.
+align-items => Positions each item vertically inside its grid cell.  */

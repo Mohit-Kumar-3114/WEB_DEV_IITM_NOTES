@@ -1,0 +1,41 @@
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    transition-property: all;
+    /* transition-property:  background-color transform; */
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+    margin: 200px;
+}
+
+
+.box1:hover{
+    transform: scale(2) rotate(45deg) translate(200px);
+    background-color: aquamarine;
+}
+
+
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    transition: all 6s steps(6) 1s;
+    /* transition: transition-property transition-duration transition-timing-function transition-delay */
+    margin: 200px;
+}
+
+
+.box2:hover{
+    transform: scale(2);
+    background-color: aquamarine;
+}
+
+/* 
+transition-property => In which property the transition will occur
+transition-duration => Duration of the transition
+transition-timing-function => Speed curve of the transition
+transition-delay => Delay before the transition starts
+*/

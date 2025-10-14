@@ -1,0 +1,48 @@
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: move 10s ease 1s 2 alternate backwards; */
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    /* from is by default 0% and to is by default 100% */
+    /* from{
+        background-color: bisque;
+        color: white;
+    }
+
+    to{
+        background-color: blue;
+        color: red;
+        transform: rotate(270deg);
+    } */
+
+    0%{
+        background-color: blue
+    }
+
+    30%{
+        background-color: red
+    }
+
+    70%{
+        background-color: black
+    }
+
+    100%{
+        background-color: green
+    }
+
+}
+
+    

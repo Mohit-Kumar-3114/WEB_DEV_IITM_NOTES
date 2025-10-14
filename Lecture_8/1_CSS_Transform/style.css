@@ -1,0 +1,96 @@
+
+.rotate{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    margin: 30px;
+}
+
+.rotate:hover{
+   /* transform: rotate(45deg); */
+   transform: rotate(0.25turn);
+}
+
+.rotateX:hover{
+    transform: rotateX(45deg);
+    /* transform: rotateX(90deg); */
+}
+
+.rotateY:hover{
+    transform: rotateY(45deg);
+}
+
+.rotateZ:hover{
+    transform: rotateZ(45deg);
+}
+
+
+
+.scale{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    margin: 30px;
+}
+
+.scale:hover{
+    transform: scale(2);
+}
+
+.scaleX:hover{
+    transform: scaleX(2);
+}
+
+.scaleY:hover{
+    transform: scaleY(0.5);
+}
+
+.scaleZ:hover{
+    transform: scaleZ(0.5);
+}
+
+
+.translate{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    margin: 30px;
+}
+
+.translate:hover{
+    transform: translate(30px, 60px);
+    /* commas seperated values for different axis */
+}
+
+.translateX:hover{
+    transform: translateX(30px);
+}
+
+.translateY:hover{
+    transform: translateY(30px);
+}
+
+.translateZ:hover{
+    transform: translateZ(30px);
+}
+
+
+
+.skew{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    margin: 30px;
+}
+
+.skew:hover{
+    transform: skew(15deg);
+}
+
+.skewX:hover{
+    transform: skewX(15deg);
+}
+
+.skewY:hover{
+    transform: skewY(15deg);
+}

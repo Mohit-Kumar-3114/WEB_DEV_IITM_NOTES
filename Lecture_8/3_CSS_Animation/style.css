@@ -6,12 +6,12 @@
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     /* animation: move 10s ease 1s 2 alternate backwards; */
     animation-name: move;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+    animation-fill-mode: both;
 }
 
 @keyframes move {
@@ -31,18 +31,34 @@
         background-color: blue
     }
 
-    30%{
+    50%{
         background-color: red
     }
-
-    70%{
-        background-color: black
-    }
-
     100%{
         background-color: green
     }
-
 }
 
-    
+/* 
+animation-name => name of the animation
+
+animation-duration => duration of the animation
+
+animation-timing-function => speed curve of the animation
+
+animation-delay => delay before the animation starts
+
+animation-iteration-count => number of times the animation should run
+
+animation-direction => direction of the animation
+       eg. normal => 0% to 100%
+           reverse => 100% to 0%
+           alternate => 0% to 100% to 0%
+           alternate-reverse => 100% to 0% to 100%
+
+animation-fill-mode => what values should be applied before and after the animation
+         eg. forwards => after the animation ends, the element will retain the styles defined in the last keyframe
+             backwards => before the animation starts, the element will apply the styles defined in the first keyframe
+             both => combination of forwards and backwards
+             none => default value, the element will not retain any styles from the animation after it ends
+ */

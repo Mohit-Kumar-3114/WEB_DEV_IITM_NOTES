@@ -1,0 +1,44 @@
+
+#box{
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+    background-color: green;
+}
+
+
+@media (orientation: portrait){
+    #box{
+        background-color: blue;
+    }
+}
+
+
+
+#container {
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+}
+
+.items{
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+}
+
+
+@media (max-width: 500px){
+    #container{
+        border: 2px solid white;
+        background-color: pink;
+        grid-template-columns: 1fr;
+    }
+
+    .items{
+        border:2px solid white
+    }
+}

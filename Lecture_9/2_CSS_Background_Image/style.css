@@ -1,0 +1,36 @@
+
+#container_1{
+    width: 300px;
+    height: 800px;
+    border: 2px solid red;
+    margin: 20px;
+    background-image: url(./cat-image.jpg);
+    background-position: right;
+    background-size: cover;
+    /* background-size: cover means the background image will cover the entire container
+    which may cause some parts of the image to be cropped 
+    */
+}
+
+
+#container_2{
+    width: 300px;
+    height: 800px;
+    border: 2px solid red;
+    background-color: red;
+    margin: 20px;
+    background-image: url(./cat-image.jpg);
+    background-repeat: no-repeat;
+    /* no-repeat | repeat | repeat-x | repeat-y */
+
+    background-size: contain;
+    /* background-size: contain means the background image will be scaled to fit the container
+    without cropping, but may leave empty space if the aspect ratios do not match
+    */
+
+    background-position: bottom;
+    /* background-position tells the browser where to position the background image */
+
+    background-blend-mode: multiply;
+    /* background-blend-mode defines how the background image should blend with the background color */
+}

@@ -1,0 +1,71 @@
+
+Question- What is JavaScript?
+Answer- JavaScript is a high-level, interpreted programming language used to make web pages dynamic
+and interactive, running both on the client-side and server-side. 
+
+
+
+
+Question- What is client-side and server-side?
+Answer- Client-side is the part of the website that runs on the user's browser, while server-side 
+is the part of the website that runs on the server.
+
+
+
+
+Question- What is high level programming language?
+Answer- A high-level programming language is a programming language that is designed to be easy to 
+read, write and understand for humans. It is translated into machine code (0s and 1s) by a compiler
+or interpreter. Example: JavaScript, Python, Java, etc.
+
+
+
+
+Question- What is low level language?
+Answer- A low-level language is a language that is designed to be easy to understand by the machine. 
+These are difficult to read and write for humans. Example: Assembly, Machine code, etc.
+
+
+
+
+Question- What is strongly typed and weakly typed programming language?
+Answer- A strongly typed programming language is a programming language that requires explicit type 
+declarations for all variables. Example: Java, C++, etc. 
+        A weakly typed programming language is a programming language that does not require explicit 
+type declarations for all variables. Example: JavaScript, Python, etc.
+
+
+
+
+Question- What are static and dynamic programming language?
+Answer- A static programming language is a programming language that does not allow you to change the value 
+of a variable at runtime. Example: Java, C++, etc. 
+        A dynamic programming language is a programming language that allows you to change the value of 
+a variable at runtime. Example: JavaScript, PHP, etc.
+
+
+
+
+Question- What is compiled and interpreted programming language?
+Answer-  A compiled language translates code from a high-level programming language into machine code before the 
+program runs, producing a complete executable file that can run independently. Example: C, C++, etc. 
+         An interpreted language translates code from a high-level programming language into machine code line 
+by line as the code runs, without creating a separate executable file. Example: JavaScript, Python, etc.
+
+
+
+
+Question- What is compile-time and runtime?
+Answer- Compile-time refers to the phase during which a program is translated from the source code into 
+machine code or an intermediate code by a compiler. Whereas run-time, or execution time, is the period when 
+a program is actually running and performing its tasks on a computer.
+
+
+
+
+Question- Explain single threaded nature of JavaScript?
+Answer- JavaScript is a single-threaded language, meaning it can only execute one task at a time. This is 
+because JavaScript uses a single call stack to manage its execution context. The call stack is a data
+structure that stores the function calls in a last in, first out (LIFO) order. When a function is called, 
+its execution context is pushed onto the call stack, and when the function completes, its execution 
+context is popped off the call stack. This is why JavaScript is synchronous and blocking.

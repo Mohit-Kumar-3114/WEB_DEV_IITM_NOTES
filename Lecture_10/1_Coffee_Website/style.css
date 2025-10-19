@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+/* Navbar CSS */
+.navbar{
+    width: 100%;
+    height: 16vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 12, 12);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.nav_items_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.nav_items{
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.nav_items:hover{
+   color: #d3ad7f;
+   text-decoration: underline;
+   animation: move_nav_items_underline 1s cubic-bezier(0.23, 1, 0.320, 1);
+   animation-fill-mode: forwards;
+}
+
+
+@keyframes move_nav_items_underline {
+    from{
+        text-underline-offset: 0px;
+    }
+    to{
+        text-underline-offset: 8px;
+    }
+}
+
+
+.nav_icons{
+    color: white;
+    display: flex;
+    gap: 20px;
+    font-size: x-large;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+.fas:hover{
+    color: #d3ad7f;
+}
+
+
+
+
+/* Home CSS */
+.home{
+    width: 100%;
+    height: 84vh;
+    background-image: url(./images/coffee-2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: none;
+    padding-top: 3.5rem;
+    padding-left: 5rem;
+}
+
+
+.home_elements{
+    width: 50%;
+}
+
+
+.home_h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.7rem;
+    margin-bottom: 1rem;
+}
+
+
+.home_p{
+    color: rgba(255, 255, 255, 0.864);
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: lighter;
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+}
+
+
+.home_button{
+    font-family: sans-serif;
+    background-color: #d3ad7f;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    padding: 0.5rem 1.5rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+.home_button:hover{
+    transform-origin: 80px;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* About Us CSS */
+.about{
+    background-color: black;
+    padding-top: 3.5rem;
+}
+
+
+.about_heading{
+    text-align: center;
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.about_heading_s1{
+    color:  #d3ad7f;
+}
+
+
+.about_container{
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+.about_img{
+    width: 50%;
+}
+
+
+.about_img > img {
+    width: 100%;
+}
+
+
+.about_content{
+    width: 50%;
+    color: white;
+    background-color: #13131A;
+    padding: 2.5rem 1rem;
+}
+
+
+.about_content > h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about_content > p{
+    line-height: 1.6rem;
+    color: #cccccc;
+    font-size: 17px;
+}
+
+
+.about_button{
+    font-family: sans-serif;
+    background-color: #d3ad7f;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    padding: 0.5rem 1.5rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+.about_button:hover{
+    transform-origin: 50px;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* Our Menu CSS */
+.menu{
+  background-color: black;
+  padding-top: 2rem;
+}
+
+
+.menu_heading{
+    text-align: center;
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.menu_heading_s2{
+    color:  #d3ad7f;
+}
+
+
+.menu_content{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+.menu_content > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    color: white;
+    height: 57vh;
+    gap: 15px;
+}
+
+
+.menu_content > div:hover > button{
+    color: black;
+}
+
+
+.menu_content > div:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.menu_content > div > img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.menu_content > div > h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+.menu_s1{
+    font-size: 1.7rem;
+}
+
+
+.menu_s2{
+    text-decoration: line-through;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 1px;
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.747);
+}
+
+
+.menu_content > div > button{
+    font-family: sans-serif;
+    background-color: #d3ad7f;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    padding: 0.5rem 1.5rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    border: none;
+}
+
+
+.menu_content > div > button:hover{
+    transform: scaleX(1.05);
+    letter-spacing: 1px;
+    color: black;
+}
+

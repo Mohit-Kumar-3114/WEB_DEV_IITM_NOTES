@@ -115,10 +115,10 @@
     flex-grow: 2;
 }
 
-/* Total grow factor is 3
+/* Total grow factor is 5
     Space is distributed in the ratio of grow factors
-    Item 2 will take 1/3rd of the available space
-    Item 3 will take 2/3rd of the available space
+    Item 2 will take 3/5th of the available space
+    Item 3 will take 2/5th of the available space
 */
 
 #container19{

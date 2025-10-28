@@ -54,7 +54,7 @@ console.log(g) // 14
 
 
 // Comparison Operator
-// either tur or false
+// either true or false
 
 let h = 10
 let i = 10

@@ -1,0 +1,197 @@
+
+
+Question- What is differnce between Javascript and ECMAscript?
+ANswer- The primary difference between JavaScript and ECMAScript is that ECMAScript is a specification, while 
+JavaScript is an implementation of that specification. In other words, ECMAScript defines what a scripting 
+language should look like, while JavaScript is an actual implementation of that specification.
+
+
+
+
+Question- What is V8 engine?
+Answer- V8 refers to Google's open-source JavaScript engine. It's written in C++ and is used in Google Chrome and 
+other Chromium-based browsers. V8 is known for compiling js code to native machine code before executing it.
+
+
+
+
+Question- What is spider-monkey engine?
+Answer- SpiderMonkey is Mozilla's JavaScript engine, handling how Firefox interprets and executes JavaScript code 
+for web applications. It is written in RUST.
+
+
+
+
+Question- What is node.js?
+Answer- Node.js is a javascript runtime. It is neither a language nor a framework. It is built on V8 javascript 
+engine. It is written in C++. It essentially allows us to run js code on backend. It is not tied to DOM. It is not 
+ideal for cpu intensive tasks.
+
+
+
+
+Question- What is bun?
+Answer- Bun is a javascript runtime but faster than node.js. It is written in Zig.
+
+
+
+
+Question- What is client-server architecture?
+Answer- The communication between clients and servers in web-based systems follows a cyclical process known as the 
+request-response cycle. On the client side, the request is constructed using essential components: headers, body, 
+and method. Headers contain metadata about the request, specifying content types, accepted formats, and more. The 
+body holds the actual data being sent, such as form inputs or JSON payloads. The method defines the action to be 
+performed on the server, like retrieving data with GET or submitting information with POST.
+            Once the client sends this request, the server receives it and begins processing. It interprets the 
+headers, body, and method to understand the client's intent. The server then generates a response, 
+composing headers and potentially constructing a body that contains the requested data. Alongside this, 
+the server assigns a status code to the response, indicating the outcome of the request, whether it was 
+successful (200 OK) or encountered an error (404 Not Found).
+            Upon receiving the server's response, the client interprets the status code to understand the result. 
+
+
+
+
+Question- What is protocol?
+Answer- A protocol is a set of rules and conventions that defines how data is transmitted and received between
+devices.
+
+
+
+
+Question- What is http?
+Answer- HTTP is the primary protocol for transmission of information across the Internet. It allows frontend to 
+talk with the backend.
+
+
+
+
+Question- What is https?
+Answer- Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary protocol
+for transmission of information across the Internet. HTTPS is encrypted in order to increase security of data
+transfer. This is particularly important when users transmit sensitive data, such as by logging into a bank 
+account, email service, or health insurance provider.
+
+
+
+
+Question- What is http server?
+Answer- An HTTP (Hypertext Transfer Protocol) server is a type of software or service that handles incoming HTTP 
+requests from clients (such as web browsers) and processes those requests to deliver web content or perform various 
+actions based on the request.
+
+
+
+
+Question- What is status code?
+Answer- Status codes in HTTP are three-digit numbers sent by servers to tell clients if their request was successful 
+(2xx), had errors on the client side (4xx), had errors on the server side (5xx), required a redirect (3xx), or 
+carried specific information (1xx). They're quick signals that help understand what happened with a request.
+
+
+
+
+Question- What is IP address and domain name?
+Ansswer- An IP address (Internet Protocol address) is a numerical label assigned to each device connected to a 
+computer network that uses the Internet Protocol for communication. A domain name is a human-readable label used to 
+identify a specific location or entity on the internet. 
+
+
+
+
+Question- What is network?
+Answer-  A computer network is a system that connects two or more computing devices for transmitting and sharing 
+information.
+
+
+
+
+Question- What is local host?
+Answer- In simpler terms, when you access "localhost" in a web browser or any other application, you are actually 
+referring to your own computer. This allows you to view and interact with web applications running on your local 
+machine.
+
+
+
+
+Question- What is dns?
+Answer- DNS stands for Domain Name System. It is a naming system used to translate human-readable domain names 
+(like www.example.com) into IP addresses (such as 192.0.2.1) that computers use to identify each other on a network.
+
+
+
+
+Question- What is express.js?
+Answer- Express is a minimal and flexible web application framework for Node.js, designed to build web applications 
+and APIs. It's one of the most popular frameworks used in the Node.js ecosystem due to its simplicity, scalability, 
+and extensibility. To load the express module we use require() method. For example: const express = require("express").
+If function is not globally found then write npm init -y and npm install express in integrated terminal.
+
+
+
+
+Question- What is rest api?
+Answer- RESTful API (Representational State Transfer Application Programming Interface) is a software architectural 
+style for designing networked applications. It utilizes a stateless client-server communication protocol, typically 
+over HTTP, where clients can access and manipulate resources on a server using a predefined set of operations, such 
+as HTTP methods (GET, POST, PUT, DELETE). In the context of a RESTful API, "stateless" means that the server does 
+not store any information about the client's previous interactions or requests.
+
+
+
+
+Question- What is difference between library and framework?
+Answer- Libraries are like tools in a toolbox that you can use when needed; you control when and how you use them 
+in your code. Frameworks are like a blueprint or a set of rules that define how you build something; you work within 
+the framework's structure and guidelines.
+
+
+
+
+Question- What is port?
+Answer- Web server ports are the logical endpoints of a network connection that is used to exchange information 
+between a web server and a web client. These ports are assigned a unique number to identify them separately.
+
+
+
+Question- What is npm and npx?
+Answer- NPM is a package manager used to install, delete, and update Javascript packages on your machine. NPX is a 
+package executer, and is used to execute javascript packages directly, without installing them locally or globally.
+
+
+
+
+
+Question- What are http requests?
+Answer- In an HTTP server, a client can make various types of requests to interact with the server and retrieve or 
+send data. The most common types of HTTP requests are:
+1. GET: Used to request data from a specified resource.
+2. POST: Used to send data to a server to create/update a resource.
+3. PUT: Similar to POST, but used to update a resource or create a new one if it doesn't exist.
+4. DELETE: Deletes the specified resource.
+
+
+
+
+
+Question- What is the difference between get and post request?
+Answer- GET Request:
+1. Usage: Used to request data from a specified resource.
+2. Data Handling: Sends data via the URL parameters (query string).
+3. Visibility: Parameters are visible in the URL.
+4. Security: Less secure for sensitive data as data is visible in the URL.
+5. Example of a GET request: https://example.com/api/products?id=123
+
+POST Request:
+1. Usage: Used to submit data to be processed to a specified resource.
+2. Data Handling: Sends data in the body of the HTTP request.
+3. Visibility: Data is not visible in the URL.
+4. Security: More secure for sensitive data as data is not visible in the URL.
+5. Example of a POST request: https://example.com/api/products   Body: { "id": 123 }
+
+
+
+
+
+Question- What does app listen mean?
+Answer- The app.listen() function starts the Express server and makes it listen on the specified port.

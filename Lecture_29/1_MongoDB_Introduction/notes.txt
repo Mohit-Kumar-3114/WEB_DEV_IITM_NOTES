@@ -1,0 +1,69 @@
+
+Question- What is database?
+Answer- A database is a structured collection of data stored in a computer system. It is designed to store, manage, 
+and retrieve data efficiently.
+
+
+
+
+Question- What is difference between sql and nosql?
+Answer- Sql-
+1. The data is stored in a tabular format.
+2. Follows ACID properties.
+3. Follows strictly defined schema.
+4. Eg- MySQL, PostgreSQL, Oracle, etc.
+
+NoSql-
+1. The data is stored in a non-tabular format like documents, key-value pairs, etc.
+2. Follows BASE properties.
+3. Does not follow strictly defined schema.
+4. Eg- MongoDB, CouchDB, Redis, etc.
+
+
+
+
+Question- What are acid properties?
+Answer- 1. Atomicity- Transaction should be atomic, either it should be completely executed or not executed at all.
+2. Consistency- Data should be consistent before and after transaction.
+3. Isolation- Transaction should be isolated from other transactions.
+4. Durability- Data should be durable, even if the system crashes.
+
+
+
+
+Question- What are base properties?
+Answer- 1. Availability- Data should be available all the time.
+2. Soft state- Data should be soft state, it should not be permanent.
+3. Eventual consistency- Data should be consistent eventually.
+
+
+
+
+Question- What is MongoDB?
+Answer- MongoDB is a NoSQL database management system. It is a document-oriented database program that uses JSON-like 
+documents to store data. It is an open-source, cross-platform, and NoSQL database program.
+
+
+
+
+Question- What is mongoose?
+Answer- Mongoose is an ODM (Object Data Modeling) library for MongoDB in Node.js that helps you structure your data using schemas.
+It provides easy methods to create, read, update, and delete documents.
+
+
+
+
+Question- What is collection?
+Answer- A collection is a group of documents stored in MongoDB. It is similar to a table in a relational database.
+
+
+
+
+Question- What is document?
+Answer- A document is a record in a MongoDB collection. It is similar to a row in a relational database.
+
+
+
+
+Question- What is schema?
+Answer- A schema is a blueprint for a collection in MongoDB. It defines the structure of the documents in the collection.

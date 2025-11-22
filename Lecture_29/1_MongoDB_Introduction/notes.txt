@@ -47,8 +47,9 @@ documents to store data. It is an open-source, cross-platform, and NoSQL databas
 
 
 Question- What is mongoose?
-Answer- Mongoose is an ODM (Object Data Modeling) library for MongoDB in Node.js that helps you structure your data using schemas.
-It provides easy methods to create, read, update, and delete documents.
+Answer- Mongoose is an ODM (Object Data Modeling) library for MongoDB in Node.js that helps you structure your 
+data using schemas. It provides easy methods to create, read, update, and delete documents. Maps JavaScript objects ↔ document-based 
+structure (BSON/JSON).
 
 
 

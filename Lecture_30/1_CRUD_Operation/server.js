@@ -15,6 +15,7 @@ mongoose.connect(process.env.DATABASE_URL)
 })
 
 
+
 app.get("/api/students", async function(req, res){
     const result = await Student.find()
     res.send(result)

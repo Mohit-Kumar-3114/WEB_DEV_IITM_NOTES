@@ -97,6 +97,73 @@ app.get("/post_by_email", async function(req, res){
 })
 
 
+
+
+// 3. Update
+// a. updateOne()
+// b. updateMany()
+// c. findByIdAndUpdate()
+
+app.put("/update_user", async function(req, res){
+    const email = req.query.email
+    const result = await User.updateOne({ email: email }, { age: 31 })
+    res.send({"message": "user updated succesfully", data: result})
+})
+
+app.put("/update_post", async function(req,res){
+    const email = req.query.email
+    const user = await User.findOne({ email : email })
+    const result = await Post.updateMany({ userId: user._id }, {description: "This is updated des"})
+    res.send({
+        "message": "post updated succesfully",
+        data: result
+    })
+})
+
+app.put("/update_user_by_id/:id", async function(req, res){
+    const id = req.params.id
+    const result = await User.findByIdAndUpdate(id, {age : 32}, {new : true})
+    // new true lagane se updated document milega otherwise without iske update to 
+    // hojayega but return purana document krega  
+    res.send({"message": "user updated succesfully", data: result})
+})
+
+
+
+
+// 4. Delete
+// a. deleteOne()
+// b. deleteMany()
+// c. findByIdAndDelete()
+
+app.delete("/delete_user", async function(req, res){
+    const email = req.query.email
+    const result = await User.deleteOne({email: email})
+    res.send({"message": "user delete successfully", data: result})
+})
+
+app.delete("/delete_post", async function(req,res){
+    const email = req.query.email
+    const user = await User.findOne({ email : email })
+    if(!user){
+        res.send("user not found")
+    }
+    const result = await Post.deleteMany({ userId: user._id })
+    res.send({
+        "message": "post deleted succesfully",
+        data: result
+    })
+})
+
+app.delete("/delete_user_by_id/:id", async function(req, res){
+    const id = req.params.id
+    const result = await User.findByIdAndDelete(id)
+    res.send({
+        "message": "user deleted successfully",
+        data: result
+    })
+})
+
 app.listen(3000, function(){
     console.log("server has started on port 3000")
 })

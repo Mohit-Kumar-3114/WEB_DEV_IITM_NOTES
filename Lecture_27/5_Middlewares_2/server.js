@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 app.use(express.json()) // global middleware
-app.use(check_id_existence) // everytime it runs when a request id made to server because it is global middleware
+app.use(check_id_existence) // everytime it runs when a request is made to server because it is global middleware
 
 let students = [
     {

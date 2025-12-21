@@ -1,0 +1,60 @@
+
+Question- What is hashing?
+Answer- Hashing often refers to the process of securely storing and verifying passwords or credentials. Instead of 
+storing plain-text passwords in a database, which can pose a security risk if the database is compromised, systems 
+store password hashes. When a user creates or updates a password, it's hashed using a secure hash function. When a 
+user attempts to log in, the provided password is hashed using the same hash function, and the resulting hash is 
+compared to the stored hash in the database. If they match, the authentication is successful. Hashing is a one-way 
+process. The original data cannot be derived from the hash. It's designed to be irreversible.
+
+
+
+
+Question- What is encryption?
+Answer- Encryption transforms data into an unreadable format (ciphertext) using an algorithm and a key. The main 
+goal is to protect confidentiality by allowing authorized parties to decrypt and access the original data. 
+Encryption is a reversible process using a specific key or keys. The ciphertext can be decrypted back to the 
+original plaintext using the decryption key.
+
+
+
+
+Question- What is json web tokens?
+Answer- JWT stands for JSON Web Token. It's a compact and secure way to transmit information between parties as a 
+JSON object. JWTs are commonly used for authentication and information exchange in web applications. They consist 
+of three parts: a header specifying the token's type and the cryptographic algorithm used, a payload containing the 
+information being transmitted, and a signature to ensure the token hasn't been tampered with. 
+
+Eg- eyJhbGciOiAiSFMyNTYiLCAidHlwIjoiSldUIn0.eyJ1c2VybmFtZSI6ICJqhuX2RvZSJ9.kP1T-2cM-m71l89K8AGjyXJbSOmc3r3mJzUKm-Vs
+1. Header: eyJhbGciOiAiSFMyNTYiLCAidHlwIjoiSldUIn0 (base64Url-encoded JSON { "alg": "HS256", "typ": "JWT" })
+2. Payload: eyJ1c2VybmFtZSI6ICJqb2huX2RvZSJ9 (base64Url-encoded JSON { "username": "john_doe" })
+3. Signature: kP1T-2cM-m71l89K8Ad6iGjyXJbSOmc3r3mJzUKm-Vs (base64Url-encoded signature created using the header, 
+payload, and secret key)
+
+It always give same token for same input.
+
+
+
+
+Question- What is authentication?
+Answer- Backend authentication refers to the process of confirming and validating the identity of a user or system 
+trying to access a service or application.
+
+
+
+
+Question- What is authorization?
+Answer- Authorization refers to the process of determining what actions or activities an authenticated user is 
+allowed to perform within a system or an application. It involves granting or denying access rights and permissions 
+to resources based on the identity of the user.
+
+
+
+
+Question- What are cookies?
+Answer- A cookie is a small piece of data stored in the user’s browser by a website. It helps the server remember 
+user information, and cookies are sent automatically (by default) with every HTTP request from the browser to 
+the same server.
+
+
+

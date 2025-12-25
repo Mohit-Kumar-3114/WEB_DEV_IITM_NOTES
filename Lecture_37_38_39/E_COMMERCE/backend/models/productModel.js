@@ -23,7 +23,7 @@ const productSchema = new mongoose.Schema({
         required: true
     },
     sizes:{
-        type: Array,
+        type: [String],
         required: true
     },
     bestSeller:{
@@ -32,8 +32,7 @@ const productSchema = new mongoose.Schema({
         default: false
     },
     images:{
-        type: Array,
-        required: true
+        type: [String],
     }
 },
    { timestamps: true }

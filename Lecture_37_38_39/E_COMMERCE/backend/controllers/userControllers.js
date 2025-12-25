@@ -112,4 +112,43 @@ async function userLogin(req, res){
     }
 }
 
-module.exports = {userRegister, userLogin}
+
+
+
+async function adminLogin(req, res){
+    try{
+        const{email, password} = req.body
+        if(!email || !password){
+            return res.status(400).send({
+                message: "credentials are missing"
+        })
+       }
+
+       if(email != process.env.ADMIN_EMAIL || password != process.env.ADMIN_PASSWORD){
+            return res.status(400).send({
+                message: "Invalid credentials"
+            })
+       }
+
+       const token = jwt.sign(
+        {
+            email: email
+        },
+        process.env.JWT_SECRET,
+       )
+
+       return res.status(200).send({
+        message: "admin login successfully",
+        data: token
+       })
+    } catch(error){
+        console.log(error)
+        return res.status(500).send({
+            success: false,
+            error: error.message
+        })
+    }
+
+}
+
+module.exports = {userRegister, userLogin, adminLogin}

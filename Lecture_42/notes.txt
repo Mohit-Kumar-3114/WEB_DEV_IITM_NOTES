@@ -1,0 +1,49 @@
+
+
+Question- What is react?
+Answer- ReactJS is an open-source JavaScript library used to create user interfaces. For dynamic websites, these 
+libraries make it easier to do DOM manipulation. React is just an easier way to write normal HTML/CSS/JS. It’s a 
+new syntax, that under the hood gets converted to HTML/CSS/JS using npm run build.
+
+
+
+
+Question- What is virtual dom?
+Answer- The Virtual DOM in React is a lightweight representation of the Real DOM. When your app changes, React 
+updates the Virtual DOM first, then compares it with its previous Virtual DOM to detect changes (a process called 
+"diffing"). After identifying differences, React updates only the specific parts of the Real DOM that have changed. 
+This approach avoids re-rendering large sections or the entire page. The Virtual DOM ensures a smoother and faster 
+user experience.
+
+
+
+
+Question- What is state, components and re-rendering in react?
+Answer- State in React is a way to store and manage data that can change over time like the value of a counter.
+Components are self-contained, reusable pieces of code that work like JavaScript functions but return HTML. The 
+Button component, for example, takes the state (count) as an input and updates how it looks based on that state. 
+Re-rendering in React refers to the process of updating the visual representation of a component in response to 
+changes in its state or props.
+
+
+
+
+Question- What is jsx?
+Answer- JSX (JavaScript XML) is a syntax extension for JavaScript used with React, allowing developers to write 
+HTML-like code in their JavaScript files.
+
+
+
+
+Question- What are props?
+Answer- In React, props (short for properties) are a way to pass data from a parent component to a child component. 
+Props in React are read-only. A child component cannot modify the props it receives from a parent. Props are 
+immutable.
+
+
+
+
+Question- What is single page application?
+Answer- A Single Page Application (SPA) is a web app that loads a single HTML page and dynamically updates its 
+content using JavaScript without fully reloading the page, giving a smoother and faster user experience. Frameworks
+/libraries like React are commonly used to build SPAs.

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<div id="root"></div>
+
+<button onclick="update()">Update</button>
+
+<script>
+  let count = 0;
+
+  const root = ReactDOM.createRoot(
+    document.getElementById("root")
+  );
+
+  function update() {
+    count++;
+
+    root.render(
+        // no need of createElement calls with JSX
+      React.createElement(
+        "div",
+        null,
+        React.createElement("div", null, "This is a div"),
+        React.createElement("p", null, "Count: " + count)
+      )
+    );
+  }
+
+  update(); 
+</script>
+
+</body>
+</html>

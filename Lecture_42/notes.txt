@@ -46,4 +46,4 @@ immutable.
 Question- What is single page application?
 Answer- A Single Page Application (SPA) is a web app that loads a single HTML page and dynamically updates its 
 content using JavaScript without fully reloading the page, giving a smoother and faster user experience. Frameworks
-/libraries like React are commonly used to build SPAs.
+libraries like React are commonly used to build SPAs.

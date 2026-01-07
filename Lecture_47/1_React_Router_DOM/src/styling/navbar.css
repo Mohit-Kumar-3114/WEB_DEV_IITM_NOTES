@@ -1,0 +1,23 @@
+
+
+#parent{
+    background-color: rgba(25, 47, 2, 0.989);
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+a{
+    color: brown;
+    padding: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}

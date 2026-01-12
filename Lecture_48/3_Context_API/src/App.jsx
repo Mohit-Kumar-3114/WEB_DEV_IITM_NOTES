@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { CompanyContext } from "./context/companyContext.jsx"
+import { CompanyContext } from "./context/CompanyContext.jsx"
 
 export default function App(){
     return(

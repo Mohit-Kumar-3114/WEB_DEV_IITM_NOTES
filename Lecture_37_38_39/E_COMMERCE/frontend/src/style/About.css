@@ -1,0 +1,76 @@
+.about-container {
+  padding-top: 20px;
+}
+
+.about-title {
+  text-align: center;
+  padding-top: 32px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 24px;
+}
+
+.why-title {
+  font-size: 20px;
+  padding: 16px 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 40px 0;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 450px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #6b7280;
+}
+
+.about-heading {
+  color: #1f2937;
+}
+
+.why-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  font-size: 14px;
+}
+
+.why-card {
+  border: 1px solid #e5e7eb;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-card p {
+  color: #6b7280;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-text {
+    width: 50%;
+  }
+
+  .why-container {
+    flex-direction: row;
+  }
+
+  .why-card {
+    padding: 80px 64px;
+  }
+}

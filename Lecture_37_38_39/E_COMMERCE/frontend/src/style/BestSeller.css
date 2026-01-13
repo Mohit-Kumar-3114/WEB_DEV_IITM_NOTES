@@ -1,0 +1,41 @@
+.bestSeller-container {
+  margin-top: 80px;
+}
+
+
+@media (min-width: 640px) {
+  .bestSeller-desc {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bestSeller-desc {
+    font-size: 16px;
+  }
+}
+
+
+.bestSeller-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .bestSeller-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .bestSeller-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bestSeller-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

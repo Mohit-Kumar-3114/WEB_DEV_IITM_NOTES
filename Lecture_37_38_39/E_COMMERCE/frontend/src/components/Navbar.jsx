@@ -2,17 +2,15 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { assets } from "../assets/assets";
 // import { ShopContext } from "../context/ShopContext";
-import { useNavigate } from "react-router-dom";
 import "../style/Navbar.css";
 import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
-  const navigate=useNavigate();
 
 //   const { setShowSearch, getCartCount, navigate, token, setToken, setCartItems} = useContext(ShopContext);
-  // const {showSearch,setShowSearch,getCartCount} = useContext(ShopContext);
+  const { showSearch, setShowSearch, navigate, getCartCount } = useContext(ShopContext);
 
 //   const logout = () => {
 //     navigate("/login");
@@ -87,7 +85,7 @@ const Navbar = () => {
      
         <Link to="/cart" className="cart-wrapper">
           <img src={assets.cart_icon} alt="Cart" className="icon" />
-          {/* <span className="cart-count">{getCartCount()}</span> */}
+          <span className="cart-count">{getCartCount()}</span>
         </Link>
 
   

@@ -1,0 +1,35 @@
+.related-container {
+  margin: 2rem 0;
+}
+
+.related-title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  row-gap: 1.5rem;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .related-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .related-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .related-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

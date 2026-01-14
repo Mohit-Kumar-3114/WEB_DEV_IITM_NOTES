@@ -1,15 +1,15 @@
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
 import ProductItem from "../components/Productitem";
 import "../style/Collection.css";
 
 const Collection = () => {
-    const [filterProducts, setFilterProducts] = useState([]);  
-    const [category, setCategory] = useState([]);
-    const [subCategory, setSubCategory] = useState([]);
-    const [sortType, setSortType] = useState("relavent");
-    const { products, search, showSearch } = useContext(ShopContext);
+  const { products, search, showSearch } = useContext(ShopContext);
+  const [filterProducts, setFilterProducts] = useState([]);
+  const [category, setCategory] = useState([]);
+  const [subCategory, setSubCategory] = useState([]);
+  const [sortType, setSortType] = useState("relavent");
 
   const toggleCategory = (e) => {
     const value = e.target.value;
@@ -34,11 +34,11 @@ const Collection = () => {
   const applyFilter = () => {
     let productsCopy = [...products];
 
-    //  if (showSearch && search) {
-    //    productsCopy = productsCopy.filter((item) =>
-    //      item.name.toLowerCase().includes(search.toLowerCase())
-    //    );
-    //  }
+     if (showSearch && search) {
+       productsCopy = productsCopy.filter((item) =>
+         item.name.toLowerCase().includes(search.toLowerCase())
+       );
+     }
 
     if (category.length > 0) {
       productsCopy = productsCopy.filter((item) => category.includes(item.category));
@@ -59,15 +59,16 @@ const Collection = () => {
     } else if (sortType === "high-low") {
       copy.sort((a, b) => b.price - a.price);
     } else {
-      applyFilter()
+      applyFilter();
       return;
     }
+
     setFilterProducts(copy);
   };
 
   useEffect(() => {
     applyFilter();
-  }, [category, subCategory, products]);
+  }, [category, subCategory, search, showSearch, products]);
 
   useEffect(() => {
     sortProduct();
@@ -84,15 +85,15 @@ const Collection = () => {
         <div className="filter-box">
           <p className="filter-title">CATEGORIES</p>
           <div className="filter-options">
-            <label><input type="checkbox" value="Men" onChange={toggleCategory}/>Men</label>
-            <label><input type="checkbox" value="Women" onChange={toggleCategory}/>Women</label>
-            <label><input type="checkbox" value="Kids" onChange={toggleCategory}/>Kids</label>
+            <label><input type="checkbox" value="Men" onChange={toggleCategory} /> Men</label>
+            <label><input type="checkbox" value="Women" onChange={toggleCategory} /> Women</label>
+            <label><input type="checkbox" value="Kids" onChange={toggleCategory} /> Kids</label>
           </div>
         </div>
 
         
        <div className="filter-box">
-          <p className="filter-title">SUB-CATEGORIES</p>
+          <p className="filter-title">TYPE</p>
           <div className="filter-options">
             <label><input type="checkbox" value="Topwear" onChange={toggleSubCategory} /> Topwear</label>
             <label><input type="checkbox" value="Bottomwear" onChange={toggleSubCategory} /> Bottomwear</label>

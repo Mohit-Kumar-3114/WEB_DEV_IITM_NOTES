@@ -13,11 +13,12 @@ export default function ShopContextProvider({ children }) {
     const navigate = useNavigate();
     const [ search, setSearch ] = useState("");
     const [ showSearch, setShowSearch ] = useState(false);
-    const [ cartItems, setCartItems ] = useState([]) // productId, size, quantity
+    const [ cartItems, setCartItems ] = useState([]) 
 
     function addToCart(productId, size){
         if(!size){
             toast.error("Product size is not selected")
+            return
         }
 
         let cartData = [...cartItems]
@@ -29,23 +30,55 @@ export default function ShopContextProvider({ children }) {
         else {
             cartData.push({productId, size, quantity: 1})
         }
-        console.log(cartData)
         setCartItems(cartData) 
     }
 
 
     function getCartCount(){
-    let totalCount = 0
+        let totalCount = 0
 
-    for (let i = 0; i < cartItems.length; i++) {
-      totalCount += cartItems[i].quantity
+        for (let i = 0; i < cartItems.length; i++) {
+        totalCount += cartItems[i].quantity
+        }
+
+        return totalCount
     }
 
-    return totalCount
+
+    function updateQuantity(productId, size, quantity){
+        if(quantity < 0){
+            return
+        }
+
+        let cartCopy = [...cartItems]
+        const index = cartCopy.findIndex(item => item.productId === productId && item.size === size)
+
+        if(index !== -1){
+            if(quantity > 0) {
+              cartCopy[index] = { ...cartCopy[index], quantity: quantity }
+            } 
+            else cartCopy.splice(index, 1)
+        }
+
+        setCartItems(cartCopy)
     }
 
 
-    const value = { currency, delivery_fee, products, navigate, search, showSearch, setSearch, setShowSearch, addToCart, getCartCount };
+    function getCartAmount() {
+        let totalAmount = 0
+
+        cartItems.forEach((cartItem) => {
+        const product = products.find((p) => p._id === cartItem.productId)
+
+        if (product) {
+            totalAmount += product.price * cartItem.quantity
+        }
+        })
+
+        return totalAmount
+    }
+
+    const value = { currency, delivery_fee, products, navigate, search, showSearch, setSearch, setShowSearch, addToCart, getCartCount, cartItems, updateQuantity, getCartAmount};
 
     return(
         <ShopContext.Provider value={value}>

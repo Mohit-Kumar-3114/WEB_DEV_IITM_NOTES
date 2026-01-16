@@ -9,14 +9,14 @@ async function userRegister(req, res){
 
     if(!name || !email || !password){
         return res.status(400).send({
-            message: "credentials are missing"
+            message: "Credentials are missing"
         })
     }
 
     const result = userRegisterType.safeParse({name, email, password})
     if(!result.success){
         return res.status(400).send({
-            message: "validation failed"
+            message: "Validation failed"
         })
     }
 
@@ -25,7 +25,7 @@ async function userRegister(req, res){
     const alreadyRegistered = await User.findOne({email: data.email})
     if(alreadyRegistered){
         return res.status(400).send({
-            message: "user with this email already exists"
+            message: "User with this email already exists"
         })
     }
 
@@ -45,7 +45,7 @@ async function userRegister(req, res){
     )
 
     return res.status(200).send({
-        message: "user registered successfully",
+        message: "User registered successfully",
         data: token
     })
     } catch(error){
@@ -66,7 +66,7 @@ async function userLogin(req, res){
 
     if(!email || !password){
         return res.status(400).send({
-            message: "credentials are missing"
+            message: "Credentials are missing"
         })
     }
     
@@ -80,14 +80,14 @@ async function userLogin(req, res){
     const user = await User.findOne({email: data.email})
     if(!user){
         return res.status(400).send({
-            message: "user does not exist with this email"
+            message: "User does not exist with this email"
         })
     }
 
     const passMatch = await bcrypt.compare(data.password, user.password)
     if(!passMatch){
         return res.status(400).send({
-            message: "invalid password"
+            message: "Invalid password"
         })
     }
 
@@ -100,7 +100,7 @@ async function userLogin(req, res){
     )
 
     return res.status(200).send({
-        message: "user login successfully",
+        message: "User login successfully",
         data: token
     })
     } catch(error){

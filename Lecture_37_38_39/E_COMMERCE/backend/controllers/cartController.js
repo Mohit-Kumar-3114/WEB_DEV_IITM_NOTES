@@ -63,7 +63,7 @@ async function updateCart(req, res){
 
     const existingCartItemIndex = user.cart.indexOf(existingCartItem)
 
-    if(quantity <= 0){
+    if(Number(quantity) <= 0){
         user.cart.splice(existingCartItemIndex, 1)
     }
     else{

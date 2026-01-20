@@ -1,13 +1,15 @@
 import { createContext } from 'react'
+import { useEffect } from 'react';
 
 export const ShopContext = createContext()
-import { products } from '../assets/assets';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from "react-toastify"
 
+const backendUrl = import.meta.env.VITE_BACKEND_URL
 
 export default function ShopContextProvider({ children }) {
+    const [products, setProducts] = useState([])
     const currency = "₹";
     const delivery_fee = 10;
     const navigate = useNavigate();
@@ -77,6 +79,32 @@ export default function ShopContextProvider({ children }) {
 
         return totalAmount
     }
+
+      async function fetchProducts(){
+         try {
+            const response = await fetch(`${backendUrl}/api/v1/list-products`,
+                {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+            })
+            const result = await response.json()
+            if(response.ok){
+               console.log(result)
+               setProducts(result.data) 
+            }
+            else {
+               toast.error(result.message)
+            }
+        }
+        catch(error){
+                console.log(error)
+            }
+      }
+      useEffect(()=>{
+        fetchProducts()
+      },[])
 
     const value = { currency, delivery_fee, products, navigate, search, showSearch, setSearch, setShowSearch, addToCart, getCartCount, cartItems, updateQuantity, getCartAmount};
 

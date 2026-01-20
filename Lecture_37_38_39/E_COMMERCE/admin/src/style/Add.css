@@ -1,0 +1,100 @@
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.label {
+  margin-bottom: 8px;
+}
+
+.image-row {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+    .image-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+}
+
+.upload-img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .row {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.input.small {
+  width: 120px;
+}
+
+.sizes {
+  display: flex;
+  gap: 12px;
+}
+
+.size-box {
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.size-active {
+  background-color: rgb(241, 197, 212);
+}
+
+.size-inactive {
+  background-color: #e2e8f0;
+}
+
+.checkbox-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.submit-btn {
+  margin-top: 16px;
+  width: 112px;
+  padding: 12px 0;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -4,6 +4,7 @@ const cloudinary = require("cloudinary").v2;
 async function addProduct(req, res){
     try{
         const {name, description, price, category, subCategory, sizes, bestSeller} = req.body
+        console.log(name, description, price, category, subCategory, sizes, bestSeller)
 
         if(!name || !description || !price || !category || !subCategory || !sizes || !bestSeller){
             return res.status(400).send({

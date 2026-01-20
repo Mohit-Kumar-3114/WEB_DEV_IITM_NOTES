@@ -3,7 +3,7 @@ import { ShopContext } from '../context/ShopContext'
 import { Link } from 'react-router-dom'
 import '../style/ProductItem.css'
 
-const ProductItem = ({ id, image, name, price }) => {
+const ProductItem = ({ id, images, name, price }) => {
 
   const { currency } = useContext(ShopContext)
 
@@ -15,7 +15,7 @@ const ProductItem = ({ id, image, name, price }) => {
       <div className="product-img-wrapper">
         <img
           className="product-img"
-          src={image[0]}
+          src={images[0]}
           alt={name}
         />
       </div>

@@ -1,0 +1,81 @@
+.place-order {
+  display: flex;
+  gap: 100px;
+  padding: 40px 0;
+  min-height: 80vh;
+  border-top: 1px solid #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.heading-2{
+    margin-top:60px;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.payment-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.payment-box span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+.payment-box span.active {
+  background-color: green;
+}
+
+.payment-box img {
+  height: 20px;
+}
+
+.order-btn {
+  margin-top: 30px;
+  padding: 16px 50px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.order-btn-container{
+  display: flex;
+  justify-content: flex-end;
+}

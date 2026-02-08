@@ -1,0 +1,188 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-logo{
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin-right: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.nav-item:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  transition: ease-in 0s 0.25s;
+}
+
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-wrapper-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  background: #f4f7fb;              
+  border-radius: 10px;
+  width: 120px;
+  padding: 8px 0;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+
+.dropdown-item {
+  padding: 12px 18px;
+  font-size: 15px;
+  color: #6b7280;                    
+  cursor: pointer;
+}
+
+
+.dropdown-item:hover {
+  background-color: #e9eef5;
+  color: #111827;
+}
+
+.icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+}
+
+.profile-wrapper:hover .profile-dropdown {
+  display: flex;
+}
+
+.profile-dropdown p {
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.profile-dropdown p:hover {
+  color: black;
+}
+
+
+.cart-wrapper {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: black;
+  color: white;
+  font-size: 8px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 16px;
+}
+
+
+.mobile-menu-icon {
+  display: none;
+}
+
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.mobile-sidebar.show {
+  width: 100%;
+}
+
+.mobile-sidebar a {
+  display: block;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+}
+
+.admin {
+  border: 1px solid #000;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.admin:hover {
+  background-color: black;
+  color: white;
+  transition: ease-in 0s 0.25s;
+}

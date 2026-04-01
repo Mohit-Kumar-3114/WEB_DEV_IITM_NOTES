@@ -85,4 +85,5 @@ console.log(obj4 == obj6) /// true as their references are same
 for(let k in obj4){
     console.log(k) // prints the key
     console.log(obj4[k]) // prints the value of the key
+    // console.log(obj4.k) wrong syntax
 }

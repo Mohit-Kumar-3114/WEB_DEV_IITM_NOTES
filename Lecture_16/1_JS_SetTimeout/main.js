@@ -10,7 +10,7 @@ setTimeout(function(){
     clearTimeout(id)
 },2000)
 
-console.log(id)
+// In this nothing will be printed because we have cleared the timeout before it could execute the function.
 
 
 

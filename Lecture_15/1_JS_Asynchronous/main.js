@@ -4,11 +4,13 @@ function ourAddedDelay(){
     while(new Date().getTime() - prevTime < 5000){
 
     }
+    console.log("5 seconds have passed")
 }
 ourAddedDelay()
 console.log("hi there")
 console.log("hi there 2")
 console.log("hi there 3")
+
 // This is synchronous programming which means that the code is executed line by line and 
 // the next line is executed only after the previous line is executed. so the 
 // console.log("hi there") , console.log("hi there 2") , console.log("hi there 3") are 

@@ -95,7 +95,7 @@ else {
 }
 
 let age = 18 
-if(!(age >= 18)){ // 1 reverse the statement
+if(!(age >= 18)){ // reverse the statement
     console.log("adult")
 }
 else {

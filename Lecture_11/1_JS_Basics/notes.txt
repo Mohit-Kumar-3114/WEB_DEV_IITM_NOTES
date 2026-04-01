@@ -38,10 +38,12 @@ type declarations for all variables. Example: JavaScript, Python, etc.
 
 
 Question- What are static and dynamic programming language?
-Answer- A static programming language is a programming language that does not allow you to change the value 
-of a variable at runtime. Example: Java, C++, etc. 
-        A dynamic programming language is a programming language that allows you to change the value of 
-a variable at runtime. Example: JavaScript, PHP, etc.
+Answer- A static programming language is a programming language in which the data type of a variable 
+is checked at compile time. In this type of language, the variable type must be declared and cannot 
+be changed later. Example: Java, C, C++, etc.
+    A dynamic programming language is a programming language in which the data type of a variable is
+checked at runtime. In this type of language, the variable type does not need to be declared  explicitly and 
+can be changed during execution. Example: JavaScript, Python, PHP, etc.
 
 
 

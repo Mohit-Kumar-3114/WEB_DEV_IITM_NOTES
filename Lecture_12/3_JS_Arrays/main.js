@@ -79,9 +79,10 @@ console.log(g == h) // false as their refrences are not same
 
 
 let i = [1,2,3,4,5,6,7,8,9]
-// reverse is a method that reverses the array
-i.reverse()
+// reverse is a method that reverses the array and changes the original array
+console.log(i.reverse()) // [ 9, 8, 7, 6, 5, 4, 3, 2, 1 ]
 console.log(i) // [ 9, 8, 7, 6, 5, 4, 3, 2, 1 ]
+
 
 
 
@@ -96,10 +97,10 @@ console.log(j) // [ 6, 5, 4, 3, 2, 1 ]
 
 
 
-let k = [1,2,3,4,5,6,7,]
+let k = [1,2,3,4,5,6,7,8,9]
 console.log(k.push(10)) // 10 gives the new length of the array
 console.log(k.pop()) // 10 gives the removed element
-console.log(k.unshift(0)) // 0 gives the new length of the array
+console.log(k.unshift(0)) // 10 gives the new length of the array
 console.log(k.shift()) // 0 gives the removed element
 
 
@@ -107,7 +108,7 @@ console.log(k.shift()) // 0 gives the removed element
 
 
 let l = [1,2,3,4,5,6,7,8,9]
-let firstEven = l.find((item)=> item%2 === 0) // find the first even number in the array
+let firstEven = l.find((item)=> item % 2 === 0) // find the first even number in the array
 console.log(firstEven) // 2
 console.log(l) // no change in array
 
@@ -115,7 +116,7 @@ console.log(l) // no change in array
 
 
 let m = [1,2,3,4,5,6,7,8,9]
-let allEven = m.filter((item)=> item%2 === 0) // filter the array to only include even numbers
+let allEven = m.filter((item)=> item % 2 === 0) // filter the array to only include even numbers
 console.log(allEven) // [ 2, 4, 6, 8 ]
 console.log(m) // no change in array
 

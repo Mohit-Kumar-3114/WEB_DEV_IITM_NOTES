@@ -14,7 +14,10 @@ console.log(str.includes("jatin")) // true
 
 
 
+console.log(str.slice(3)) // name is jatin
 console.log(str.slice(3,6)) // nam
+console.log(str.slice(-4)) // atin
+console.log(str.slice(-4,-1)) // ati
 console.log(str.slice(6,3)) // no output
 let newStr = str.slice(3,6) // slice is a method that returns a new string
 console.log(str) // my name is jatin
@@ -46,7 +49,7 @@ console.log(str3.replace("hello", "hi").trim()) // hi world
 
 let str4 = "grapes"
 let str5 = "grapes"
-console.log(str4 === str5)
+console.log(str4 === str5) // true 
 
 
 

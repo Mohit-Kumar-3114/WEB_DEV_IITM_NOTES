@@ -1,5 +1,5 @@
 // HOISTING IN JS
-// Hoisting is a process in which the variables and functions declarationsare moved to the 
+// Hoisting is a process in which the variables and functions declarations are moved to the 
 // top of their scope before the code execution.
 
 console.log(x) // undefined
@@ -12,6 +12,8 @@ var x = 10;
 // const and let are also hoisted but remain in a temporal dead zone (TDZ) until 
 // the declaration is reached. Hence, they show ReferenceError ie cannot access before 
 // initialization.
+
+// var is initialized with undefined, while let and const are also hoisted, but not initialized.
 
 
 

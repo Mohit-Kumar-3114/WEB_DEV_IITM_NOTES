@@ -1,5 +1,3 @@
-
-
 console.log("chili" > "chila") // true as ascii value of i is greater than l
 console.log("eat" > "ate") // true
 console.log("eat" >= "eat") // true
@@ -13,7 +11,7 @@ console.log("jatin" + 10) // jatin10 as + is used to concatenate strings
 console.log(10+12+2+"jatin"+22+12) // 24jatin2212 
 console.log(10+12+2+"jatin"+(22+12)) // 24jatin34 
 
-console.log("jatin" - 10 - 12 - 12) // NaN as - is used to subtract numbers
+console.log("jatin" - 10) // NaN as - is used to subtract numbers
 console.log("jatin" * 2) // NaN as * is used to multiply numbers
 console.log("jatin" / 2) // NaN as / is used to divide numbers
 

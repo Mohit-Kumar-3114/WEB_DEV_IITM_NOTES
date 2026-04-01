@@ -12,8 +12,7 @@ let lastClick = 0
 
 btn.addEventListener("click", function(){
     let now = new Date().getTime() 
-    console.log(lastClick)
-    console.log(now)
+
     if(now - lastClick > 5000){
       throtlling()
       lastClick = now

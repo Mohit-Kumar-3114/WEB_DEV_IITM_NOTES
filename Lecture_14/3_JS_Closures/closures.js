@@ -1,6 +1,7 @@
 // CLOSURES IN JS
-// Closures are functions that have access to the variables of their parent scope even after the 
-// parent function has returned.
+// A closure in JavaScript is a function that remembers the variables from its outer (parent) function even after 
+// the outer function has finished executing. It allows the inner function to access and use those variables 
+// later.
 
 
 // var global scoped hota hai but agr usse function ke andar define karte hai toh usko 

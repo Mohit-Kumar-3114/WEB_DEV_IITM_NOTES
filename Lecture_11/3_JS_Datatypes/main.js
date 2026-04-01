@@ -57,16 +57,6 @@ console.log(typeof symbol); // symbol
 
 
 
-// 8. Object
-let person = {
-    name: "John",
-    age: 20,
-    isStudent: true
-};
-
-
-
-
 // Non-Primitive Data Types
 // 1. Array
 // 2. Object

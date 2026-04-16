@@ -1,9 +1,9 @@
 // 3. Explicit Binding
 // Explicit binding is a process of binding the function to the object.
 // There are 3 types of explicit binding in JS:
-// 1. call() => immediaely function ko invoke krta h or arguments comma se separated hote h 
-// 2. apply() => immediaely function ko invoke krta h or arguments aas an array pass krte h
-// 3. bind() => function lo return krta h or arguments comma se separated hote h 
+// 1. call() => immediately function ko invoke krta h or arguments comma se separated hote h 
+// 2. apply() => immediately function ko invoke krta h or arguments aas an array pass krte h
+// 3. bind() => function ko return krta h or arguments comma se separated hote h 
 
 
 function person(){

@@ -1,25 +1,40 @@
-let url = "https://api.themoviedb.mp4/"
-
-function movieChecker(url){
-    return new Promise(function(resolve, reject){
-        setTimeout(function(){
-         if(url.includes("mp4")){
-            resolve("movie mil gyi")
-         }
-         else {
-            reject("url thik krke de")
-         }
-        },4000)
+function download(){
+    return new Promise((res,rej)=>{
+    console.log("download has started")
+    setTimeout(function(){
+       console.log("download has ended")
+       res()
+    },2000)
     })
 }
 
-movieChecker(url)
-.then(function(data){
-    console.log(data)
-})
-.catch(function(error){
-    console.log(error)
-})
-.finally(function(){
-    console.log("movie ka url hmne check kr lia h") /// hmesha execute hoga
-})
+function compress(){
+    return new Promise((res,rej)=>{
+    console.log("compress has started")
+    setTimeout(function(){
+       console.log("compress has ended")
+       res()
+    },2000)
+    }
+    )
+   
+}
+
+function upload(){
+    return new Promise((res,rej)=>{
+    console.log("upload has started")
+    setTimeout(function(){
+       console.log("upload has ended")
+       res()
+    },2000)
+    }
+    )
+ 
+}
+async function process(){  // async await works only when function returns a promise
+await download()
+await compress()
+await upload()
+}
+
+process()

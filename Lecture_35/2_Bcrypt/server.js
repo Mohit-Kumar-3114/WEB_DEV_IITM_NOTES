@@ -42,6 +42,7 @@ app.post("/add_user", async function(req, res){
     }
 
     const hashedPassword = await bcrypt.hash(password, 10) // 10 => salt rounds (higher = more secure, slower)
+                                                           // salt => same password will generate different hash every time
    
     const result = await User.insertOne({
         email,

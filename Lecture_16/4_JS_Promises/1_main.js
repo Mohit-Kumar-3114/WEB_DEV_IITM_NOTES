@@ -1,5 +1,5 @@
-// PROMISES IN 
-// Promises in JavaScript are a way to handle asynchronous operations (like API calls, 
+// PROMISES IN JAVASCRIPT
+// Promise is an object that represents the result of an asynchronous operation (like API calls, 
 // file downloads, or setTimeout) without falling into callback hell.
 // It have 3 states: pending, resolved, rejected
 // pending: initial state, neither resolved nor rejected

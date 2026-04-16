@@ -11,9 +11,9 @@ let obj = {
     }
 }
 
-const p1 = Object.create(obj) // p1 is a prototype of obj
+const p1 = Object.create(obj) // obj is the prototype of p1
 console.log(obj) // { name: 'vansh', age: 20, fun: [Function: fun] }
-console.log(p1) // {} because p1 is empty but it has a prototype of obj
+console.log(p1) // {} because p1 is empty object but it has access to the properties of obj through prototype
 console.log(p1.name) // vansh
 p1.fun() // hlo from vansh
 

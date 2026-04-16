@@ -12,7 +12,7 @@ const mongoose = require("mongoose")
 // })
 
 
-let studentSchema = mongoose.Schema({
+let studentSchema = new mongoose.Schema({
     name:{
         type: String,
         required: true,

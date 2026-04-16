@@ -9,9 +9,9 @@ var x = 10;
 // console.log(x);
 // x = 10;
 
-// const and let are also hoisted but remain in a temporal dead zone (TDZ) until 
-// the declaration is reached. Hence, they show ReferenceError ie cannot access before 
-// initialization.
+// const and let are also hoisted but remain in a temporal dead zone (TDZ), the time between variable 
+// hoisted and initialized. During this time → you cannot access the variable. Hence, they show 
+// ReferenceError ie cannot access before initialization.
 
 // var is initialized with undefined, while let and const are also hoisted, but not initialized.
 
